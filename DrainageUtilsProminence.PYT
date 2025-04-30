@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# v14 - Removed GetRasterProperties calls to avoid ERROR 000867
-#     - Relies on ExtractValuesToPoints default cell size handling
-#     - Re-fixed error logging
-#     - Based on v13
 
 import arcpy
 import os
@@ -10,7 +6,6 @@ import collections
 import math
 import gc # Garbage Collector for memory management
 
-# Required external libraries (ensure installed in Pro's Python env)
 import numpy as np
 from scipy.signal import find_peaks
 
